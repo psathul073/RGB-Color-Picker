@@ -1,0 +1,68 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   
+   <head>
+       
+   <meta charset="UTF-8">
+       
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>Gradient Color Picker</title>
+       
+   <link rel="stylesheet" href="css /style.css">
+       
+   <link rel="stylesheet" href="https: //fonts.googleapis.com/css?family=Montserrat">
+   </head>
+   
+   <body>
+   
+<!---[ Container ]--->
+<div class="container">
+  <h3 class="title"> RGB Color Picker</h3>
+  <div class="color">
+
+    <div class="colorBox">
+      <div id="color"></div>
+    </div>
+
+    <div class="opBox">
+
+      <div class="Copy__info1 left1">Copied !</div>
+
+      <textarea readonly id="HEX">HEX Value</textarea>
+
+      <div class="Copy__info2 left2">Copied !</div>
+
+      <textarea readonly id="RGB">RGB Value</textarea>
+
+    </div>
+
+  </div>
+
+  <!---[ Slider]--->
+  <div class="sliderR">
+    <div class="pct__textR" data-pct="0"> </div>
+    <input class="slider" id="Red" type="range" min="0" max="255" value="98" />
+  </div>
+
+  <!---[ Slider]--->
+  <div class="sliderG">
+    <div class="pct__textG" data-pct="0"> </div>
+    <input class="slider" id="Green" type="range" min="0" max="255" value="0" />
+  </div>
+
+  <!---[ Slider]--->
+  <div class="sliderB">
+    <div class="pct__textB" data-pct="0"> </div>
+    <input class="slider" id="Blue" type="range" min="0" max="255" value="255" />
+  </div>
+
+  <div class="btnBox">
+    <button class="btn hex" id="copy-btn0" onclick="copyEvent0()">Copy HEX</button>
+    <button class="btn rgb" id="copy-btn1" onclick="copyEvent1()">Copy RGB </button>
+  </div>
+</div>
+  </body>
+  </html>
+     
